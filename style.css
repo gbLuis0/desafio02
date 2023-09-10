@@ -1,23 +1,101 @@
-body{
+* {
     margin: 0;
+}
+
+body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
 }
 
 header{
     color: #fff;
-    background-image: url(imagens/bg-3.jpg);
+    background-image: url(imagens/bg-1.jpg);
     height: 500px;
     background-size: cover;
     background-position: right center;
+    background-repeat: no-repeat;
+}
+
+header h1{
+    text-align: center;
+    margin: auto;
+    padding-top: 140px;
+    font-size: 3em;
+    text-shadow: 2px 1px 2px #000;
+}
+
+header p{
+    width: 345px;
+    text-align: center;
+    margin: 65px auto;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    background: #000000a1;
 }
 
 main{
-    background-color: #ccc;
     max-width: 900px;
     margin: auto;
 }
 
 section{
-    margin: 20px;
-    background-color: #fff;
+    margin: 15px 30px 30px;
+    background: #fff;
+    padding: 15px 13px;
+}
+
+section *{
+    margin-bottom: 15px;
+}
+
+section h2{
+    /* configuração semântica de h2 para h1*/
+    background: #eee;
+    padding: 8px 6px;
+    border-bottom: 2px solid #ccc;
+}
+
+
+section a {
+    display: inline-block;
+    padding: 13px 14px;
+    border-radius: 7px;
+    background: #ccc;
+    text-decoration: none;
+    margin: 0;
+}
+
+section a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background: #6B6C68;
+    padding: 40px 0;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+
+nav{
+    padding: 35px 55px; /*mudar pading*/
+    margin: auto;
+    text-align: right;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.918);
+    background: #00000052;
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+nav a:hover{
+    color: #00000083;
+    background: rgba(255, 255, 255, 0.918)
 }
